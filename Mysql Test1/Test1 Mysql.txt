@@ -1,0 +1,55 @@
+FRN no:12P0625/009
+Test: B 
+
+Q1. select name from Customers
+    order by name;
+
+Q2. select * from Products
+    order by price desc
+    limit(10);
+
+Q3.select salary from Employees
+   order by salary desc
+   limit(1,1);
+
+Q4.select city, count(*) from Customers
+   group by(city);
+
+Q5.select department, sum(salary) from Employees
+   group by (department)
+   having sum(salary)>200000;
+
+Q6.select phone_number, customerName from Customers
+   where phone_number like "%_ _ _ _" or customerName like "_ _ _%";
+
+
+Q7.select * from Products
+   where product_name like "%Pro%";
+
+Q8.select count(*) "No of Student", course from Students
+   group by (course) 
+   having count(*) > 30;
+
+Q9.
+
+Q10.select salary from Employees
+    group by (department) desc
+    limit(1);
+    select salary from Employees
+    group by (department)
+    limit (1);
+
+Q11.a)Data
+
+Q12.a)order by desc
+
+Q13.a)Asc
+
+Q14.b)15.68
+
+Q15.b)count()
+
+Q16.
+
+Q17. select product_id,product_name ,count(*) "Sales_count" from Products
+     where produst_id in (select product_id from Sales);
